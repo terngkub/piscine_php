@@ -1,0 +1,48 @@
+table {
+	width: 100%;
+}
+td {
+}
+img {
+	margin-top: 20px;
+	width: 100%;
+}
+.weight {
+	text-align: right;
+	font-size: small;
+}
+.element {
+	text-align: center;
+	font-weight: bold;
+}
+.number {
+	text-align: left;
+	font-size: small;
+}
+.pink {
+	background-color: pink;
+}
+.purple {
+	background-color: mediumpurple;
+}
+.grey {
+	background-color: gainsboro;
+}
+.blue {
+	background-color: steelblue;
+}
+.hydrogen {
+	background-color: papayawhip;
+}
+.orange {
+	background-color: sandybrown;
+}
+.brown {
+	background-color: burlywood;
+}
+.red {
+	background-color: plum;
+}
+.green {
+	background-color: yellowgreen;
+}
