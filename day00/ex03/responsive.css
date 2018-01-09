@@ -2,6 +2,7 @@ table {
 	width: 100%;
 }
 td {
+	padding: 10px;
 }
 img {
 	margin-top: 20px;
@@ -45,4 +46,34 @@ img {
 }
 .green {
 	background-color: yellowgreen;
+}
+
+@media only screen and (max-width: 1200px) {
+	td {
+		padding: 5px;
+	}
+	.weight, .number {
+		font-size: 0.6em;
+	}
+	.element {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	td {
+		padding: 0;
+	}
+	.weight, .number {
+		font-size: 0.3em;
+	}
+	.element {
+		font-size: 0.6em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.weight, .number {
+		font-size: 5pt;
+	}
 }
