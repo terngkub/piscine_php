@@ -3,22 +3,40 @@ body {
 }
 .header, .side-left, .main, .side-right, .pop-up {
 	border-radius: 10px;
-	box-shadow: 5px 10px 15px;
+	box-shadow: 10px 10px 10px;
 }
 .header, .side-left, .main, .side-right {
 	background-color: rgb(144, 144, 144);
 }
 .header {
+	position: relative;
 	width: 1420px;
 	height: 137px;
 	margin: 18px auto 20px;
 	padding-top: 9px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
+	padding-left: 9px;
 	box-sizing: border-box;
-	border: 1px solid grey;
 }
-.header-img {
+.day-of-the-42 {
 	height: 100%;
+}
+.reload, .close {
+	position: absolute;
+	right: 9px;
+	width: 20px;
+	height: 20px;
+}
+
+.reload {
+	top: 9px;
+}
+.close {
+	bottom: 9px;
+}
+.magnifier {
+	position: absolute;
+	right: 29px;
 }
 .content {
 	width: 1360px;
@@ -42,6 +60,7 @@ body {
 	box-sizing: border-box;
 }
 .main img {
+	width: 100%;
 	height: 100%;
 }
 .side-left, .side-right {
@@ -49,12 +68,12 @@ body {
 	height: 425px;
 	box-sizing: border-box;
 }
-.side-left, .side-right {
-	padding-left: 30px;
-	padding-right: 40px;
+.side-left {
+	padding-left: 32px;
+	padding-right: 38px;
 	padding-top: 15px;
 }
-.side-left, .side-right {
+.side-right {
 	padding-left: 35px;
 	padding-right: 35px;
 	padding-top: 15px;
@@ -63,6 +82,14 @@ body {
 	display: block;
 	width: 100%;
 	margin-bottom: 10px;
+}
+img.look {
+	border: 5px solid red;
+	border-radius: 5px;
+	margin: -5px -5px 5px -5px;
+}
+img.speak {
+	height: 68px;
 }
 .brick {
 	margin-left: -25px;
@@ -77,12 +104,55 @@ body {
 	left: -245px;
 	width: 520px;
 	height: 170px;
+	padding-top: 9px;
 	padding-left: 10px;
 	box-sizing: border-box;
 	background-color: rgb(140, 253, 142);
 	font-family: Verdana, sans-serif;
 }
+.pop-up p {
+	margin: 0;
+}
 .entrez {
-	font-family: "Courier New";
-	font-size:25pt;
+	font-family: Georgia;
+	font-size: 24pt;
+	letter-spacing: 1px;
+}
+.ordinateurs {
+	text-shadow: 5px 5px 5px red;
+}
+.bonjour {
+	font-style: italic;
+	font-size: 11.5pt;
+}
+input {
+	width: 382px;
+	height: 21px;
+	margin-left: 2px;
+	margin-top: 3px;
+	margin-right: 9px;
+	box-shadow: 0 0 5px -5px;
+}
+button {
+	width: 78px;
+	height: 21px;
+	background: linear-gradient(rgb(245, 247, 246), rgb(222, 222, 222));
+	border: 1px solid rgb(144, 144, 144);
+	border-radius: 2px;
+	font-size: 9.7pt;
+	letter-spacing: 0.4px;
+}
+.ikea {
+	position: absolute;
+	top: 330px;
+	left: 330px;
+	width: 150px;
+	height: 220px;
+}
+.apple {
+	position: absolute;
+	top: 300px;
+	left: 650px;
+	width: 120px;
+	height: 120px;
 }
