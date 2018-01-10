@@ -8,8 +8,8 @@ if ($argc > 1)
 	{
 		$new = array_filter(explode(" ", $argv[$i]));
 		$arr = array_merge($arr, $new);
-		sort($arr);
 	}
+	sort($arr);
 	foreach ($arr as $elem)
 	{
 		echo $elem . "\n";
