@@ -2,8 +2,6 @@
 <?php
 
 $content = file_get_contents("page2.html");
-echo $content;
-echo "\n";
 
 $pattern1 = "/(<a[^>]*>)([^<]*)(<.*>)?([^<]*)(<\/a>)/";
 $replace1 = function ($part)
