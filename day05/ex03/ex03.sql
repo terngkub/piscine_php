@@ -1,4 +1,4 @@
-INSERT INTO ft_table (login, date_de_creation, groupe)
+INSERT INTO ft_table (login, creation_date, `group`)
 SELECT last_name, birthdate, 'other'
 FROM user_card
 WHERE last_name LIKE '%a%'
