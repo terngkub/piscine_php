@@ -1,0 +1,49 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="text" id="n1">
+		<select id="op">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		<input type="text" id="n2">
+		<input type="submit" value="Try me!" onclick="calculate();">
+		<script>
+
+			function calculate() {
+				var n1 = Number(document.getElementById("n1").value);
+				var op = document.getElementById("op").value;
+				var n2 = Number(document.getElementById("n2").value);
+				var result;
+
+				if (n1 < 0 || n2 < 0)
+					alert("Error :(");
+				else if (n2 == 0 && (op == "/" || op == "%")) {
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+				} else {
+					if (op == "+")
+						result = n1 + n2;
+					else if (op == "-")
+						result = n1 - n2;
+					else if (op == "*")
+						result = n1 * n2;
+					else if (op == "/")
+						result = n1 / n2;
+					else if (op == "%")
+						result = n1 % n2;
+					alert(result);
+					console.log(result);
+				}
+			}
+
+			window.onload = function() {
+				window.setInterval(function(){alert("Please, use me...");}, 30000);
+			}
+			
+		</script>
+	</body>
+</html>
